@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .button__main {
+        width: 30vw;
+      }
+
+      .input__pesquisar {
+          display: block;
+          border-radius: 100%;
+      }
+}

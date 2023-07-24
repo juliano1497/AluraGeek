@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container__logo {
+    width: 100px;
+}
+
+.container__adm {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1em;
+    width: 100vw;
+}
+
+.button__adm {
+    padding: 0.5em 2em;
+    background: #ffffff;
+    border: 1px solid rgb(0, 119, 255);
+    color: rgb(0, 119, 255);
+    text-decoration: none;
+}
+
+.pesquisar__input {
+    display: none;
+}
+
+.index__banner {
+    background-image: url("../imgs-produtos/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    flex-flow: column-reverse;
+    height: 200px;
+    width: 100vw;
+}
+
+.banner__titulo {
+    font-size: 22px;
+    margin: 0 0 0.1em 0.73em;
+}
+
+.banner__texto {
+    font-size: 18px;
+    margin: 0 0 0.1em 0.89em;
+}
+
+.button__banner {
+    padding: 0.5em 0.5em;
+    background: rgb(73, 155, 248);
+    border: 1px solid rgb(0, 119, 255);
+    color: #ffffff;
+    width: 100px;
+    margin: 0.3em 0 1em 1.2em;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .container__adm {
+        padding: 1em 40px;
+    }
+
+    .button__adm {
+        order: 2;
+        padding: 0.7em 4em;
+        margin: 0 1.7em 0 0;
+    }
+
+    .pesquisar__input {
+        display: block;
+        width: 260px;
+        height: 32px;
+        border: 1px solid rgb(211, 211, 211);
+        font-size: 16px;
+        padding: 3px 8px;
+        border-radius: 100vw;
+    }
+
+    .index__banner {
+        height: 360px;
+    }
+
+    .banner__titulo {
+        margin: 0 0 0 40px;
+        font-size: 52px;
+    }
+
+    .banner__texto {
+        margin: 0.5em 0 0 40px;
+        font-size: 26px;
+    }
+
+    .button__banner {
+        padding: 0.8em 0.5em;
+        margin: 1em 0 3em 40px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+    .container__adm {
+        padding: 2em 300px;
+      }
+
+    .container__logo {
+        margin: 0 0 0 40px;
+      }
+
+      .pesquisar__input {
+        width: 260px;
+        height: 32px;
+        border: 1px solid rgb(211, 211, 211);
+        font-size: 16px;
+        padding: 3px 8px;
+        border-radius: 100vw;
+    }
+
+    .search__lupa {
+        position: relative;
+        right: 170px;
+    }
+
+    .button__adm {
+        margin: 0 10px 0 0;
+      }
+
+    .banner__titulo {
+        margin: 0 0 0 340px; 
+      }
+
+      .banner__texto {
+        margin: 0.5em 0 0 340px;
+      }
+
+      .button__banner {
+        margin: 1em 0 3em 340px;
+      }
+}

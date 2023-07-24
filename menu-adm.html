@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css-adm/style.css" rel="stylesheet">
+    <link href="css-adm/cabecalho.css" rel="stylesheet">
+    <link href="css-adm/main.css" rel="stylesheet">
+    <link href="css-adm/rodape.css" rel="stylesheet">
+    <title>AluraGeek | Adicionar produto</title>
+    
+</head>
+<body>
+
+    <header class=container__header>
+        <div class="container__adm">
+            <a href="index.html">
+                <img src="img/Logo.png" alt="Logo do AluraGeek" class="container__logo">
+            </a>  
+            <button class="button__adm">Menu administrador</button>
+            <input type="search" placeholder="Pesquisar" id="pesquisar" class="pesquisar__input" data-pesquisa>
+            <img src="img/search.png" alt="Imagem de uma lupa" class="search__lupa">
+        </div>
+    </header>
+
+    <main class="container__main">
+        <h2 class="main__descricao">Adicionar novo produto</h2>
+        
+        <form class="main__div" data-formulario>
+            <input type="text" class="input__text" id="" data-imagem>
+            <input type="text" class="input__text" id="" data-categoria>
+            <input type="text" class="input__text" id="" data-produtoName>
+            <input type="number" class="input__text" id="" data-preco>
+            <input type="text" class="input__text" id="" data-descricao>
+            <input type="submit" class="input__button" id="" value="Adicionar produto" data-submit>
+        </form>
+
+    </main>
+
+    <footer class="container__rodape">
+        <div class="container__div">
+            <ul class="container__info">
+                <img src="img/Logo.png" alt="Logo do AluraGeek" class="logo__info">
+                <div class="container__link">
+                    <li class="link__li"><a href="#" class="link__rodape">Quem somos</a></li>
+                    <li class="link__li"><a href="#" class="link__rodape">Programa fidelidade</a></li>
+                    <li class="link__li"><a href="#" class="link__rodape">Política de privacidade</a></li>
+                    <li class="link__li"><a href="#" class="link__rodape">Nossas lojas</a></li>
+                    <li class="link__li"><a href="#" class="link__rodape">Quero ser franqueado</a></li>
+                    <li class="link__li"><a href="#" class="link__rodape">Anuncie aqui</a></li>
+                </div>
+            </ul>
+            <section class="container__section">
+                <h3 class="fale__conosco">Fale conosco</h3>
+                <form class="container__rodape--form">
+                    <input type="text" name="nome" class="nome__input">
+                    <textarea name="" class="mensagem__input"></textarea>
+                </form>
+                <input type="button" value="Enviar mensagem" class="button__rodape">
+            </section>
+        </div>
+    
+        <div class="rodape__div">
+            <h3 class="rodape__descricao">Desenvolvido por Juliano Moreira</h3>
+            <p>Em 2023</p>
+        </div>
+    </footer>
+ <script src="js/criaProduto.js" type="module"></script>   
+
+</body>
+</html>

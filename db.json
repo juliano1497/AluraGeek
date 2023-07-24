@@ -1,0 +1,156 @@
+{
+  "produtos": [
+    {
+      "imageUrl": "imgs-produtos/xicara.svg",
+      "categoria": "Produtos XYZ",
+      "produtoName": "produtoName 1",
+      "preco": 60,
+      "descricao": "descricao 1",
+      "id": "1"
+    },
+    {
+      "imageUrl": "imgs-produtos/boneco.svg",
+      "categoria": "Produtos XYZ",
+      "produtoName": "produtoName 2",
+      "preco": 60,
+      "descricao": "descricao 2",
+      "id": "2"
+    },
+    {
+      "imageUrl": "imgs-produtos/mestre.svg",
+      "categoria": "Produtos XYZ",
+      "produtoName": "produtoName 3",
+      "preco": 60,
+      "descricao": "descricao 3",
+      "id": "3"
+    },
+    {
+      "imageUrl": "imgs-produtos/dart.svg",
+      "categoria": "categoria 4",
+      "produtoName": "Produtos XYZ",
+      "preco": 60,
+      "descricao": "descricao 4",
+      "id": "4"
+    },
+    {
+      "imageUrl": "imgs-produtos/bonequinho.svg",
+      "categoria": "Produtos XYZ",
+      "produtoName": "produtoName 5",
+      "preco": 60,
+      "descricao": "descricao 5",
+      "id": "5"
+    },
+    {
+      "imageUrl": "imgs-produtos/dark.svg",
+      "categoria": "Produtos XYZ",
+      "produtoName": "produtoName 5",
+      "preco": 60,
+      "descricao": "descricao 5",
+      "id": "6"
+    },
+    {
+      "imageUrl": "imgs-produtos/controlex.svg",
+      "categoria": "Produtos XYZ",
+      "produtoName": "produtoName 6",
+      "preco": 60,
+      "descricao": "descricao 6",
+      "id": "7"
+    },
+    {
+      "imageUrl": "imgs-produtos/ps.svg",
+      "categoria": "Produtos XYZ",
+      "produtoName": "produtoName 7",
+      "preco": 60,
+      "descricao": "descricao 7",
+      "id": "8"
+    },
+    {
+      "imageUrl": "imgs-produtos/nintendo.svg",
+      "categoria": "Produtos XYZ",
+      "produtoName": "produtoName 8",
+      "preco": 60,
+      "descricao": "descricao 8",
+      "id": "9"
+    },
+    {
+      "imageUrl": "imgs-produtos/switch.svg",
+      "categoria": "Produtos XYZ",
+      "produtoName": "produtoName 9",
+      "preco": 60,
+      "descricao": "descricao 9",
+      "id": "10"
+    },
+    {
+      "imageUrl": "imgs-produtos/xbox.svg",
+      "categoria": "Produtos XYZ",
+      "produtoName": "produtoName 10",
+      "preco": 60,
+      "descricao": "descricao 10",
+      "id": "11"
+    },
+    {
+      "imageUrl": "imgs-produtos/gameboy.svg",
+      "categoria": "Produtos XYZ",
+      "produtoName": "produtoName 11",
+      "preco": 60,
+      "descricao": "descricao 11",
+      "id": "12"
+    },
+    {
+      "imageUrl": "imgs-produtos/logo.svg",
+      "categoria": "Produtos XYZ",
+      "produtoName": "produtoName 12",
+      "preco": 60,
+      "descricao": "descricao 12",
+      "id": "13"
+    },
+    {
+      "imageUrl": "imgs-produtos/controle.svg",
+      "categoria": "Produtos XYZ",
+      "produtoName": "produtoName 13",
+      "preco": 60,
+      "descricao": "descricao 13",
+      "id": "14"
+    },
+    {
+      "imageUrl": "imgs-produtos/sonic.svg",
+      "categoria": "Produtos XYZ",
+      "produtoName": "produtoName 14",
+      "preco": 60,
+      "descricao": "descricao 14",
+      "id": "15"
+    },
+    {
+      "imageUrl": "imgs-produtos/game.svg",
+      "categoria": "Produtos XYZ",
+      "produtoName": "produtoName 15",
+      "preco": 60,
+      "descricao": "descricao 15",
+      "id": "16"
+    },
+    {
+      "imageUrl": "imgs-produtos/camisa.svg",
+      "categoria": "Produtos XYZ",
+      "produtoName": "produtoName 16",
+      "preco": 60,
+      "descricao": "descricao 16",
+      "id": "17"
+    },
+    {
+      "imageUrl": "imgs-produtos/pokemon.svg",
+      "categoria": "Produtos XYZ",
+      "produtoName": "produtoName 17",
+      "preco": 60,
+      "descricao": "descricao 17",
+      "id": "18"
+    },
+    {
+      "imageUrl": "https://static.zerochan.net/Monkey.D..Luffy.full.2806437.jpg",
+      "categoria": "action figure",
+      "produtoName": "luffy",
+      "preco": "500",
+      "descricao": "imagem do luffy",
+      "id": "PIHr_vh"
+    }
+  ]
+}

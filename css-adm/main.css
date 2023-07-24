@@ -1,0 +1,45 @@
+.container__main {
+    background: #d2d2d24f;
+    padding: 1em 0;
+}
+
+.main__descricao {
+    padding: 0.5em 0;
+    margin: 0 1em;
+}
+
+.main__div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.input__text, .input__button {
+    margin: 0.5em 0;
+    padding: 1em 0;
+    width: 90vw;
+}
+
+.input__button {
+    background: rgb(0, 140, 255);
+    border: 1px solid rgb(0, 140, 255);
+    color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+    .main__descricao {
+        margin: 0 1.6em;
+      }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .main__descricao {
+        text-align: center;
+        width: 70vw
+      }
+
+    .input__text, .input__button {
+        width: 40vw;
+      }
+}

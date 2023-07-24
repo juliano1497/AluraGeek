@@ -1,0 +1,76 @@
+Com base no código fornecido, aqui está uma versão atualizada que adiciona os métodos PUT e DELETE e associa cada um a um botão:
+
+javascript
+// Função para criar um novo produto
+async function criaProduto(imageUrl, categoria, produtoName, preco, descricao) {
+  const conexao = await fetch("https://64b692a1df0839c97e15cd3b.mockapi.io/produtos", {
+    method: "POST",
+    headers: {
+      "Content-type": "application/json"
+    },
+    body: JSON.stringify({
+      imageUrl: imageUrl,
+      categoria: categoria,
+      produtoName: produtoName,
+      preco: preco,
+      descricao: descricao
+    })
+  });
+
+  const novoProduto = await conexao.json();
+  console.log("Novo produto criado:", novoProduto);
+}
+
+// Função para atualizar um produto existente
+ async function atualizaProduto(id, imageUrl, categoria, produtoName, preco, descricao) {
+  const conexao = await fetch(`https://64b692a1df0839c97e15cd3b.mockapi.io/produtos/${id}`, {
+    method: "PUT",
+    headers: {
+      "Content-type": "application/json"
+    },
+    body: JSON.stringify({
+      imageUrl: imageUrl,
+      categoria: categoria,
+      produtoName: produtoName,
+      preco: preco,
+      descricao: descricao
+    })
+  });
+
+  const produtoAtualizado = await conexao.json();
+  console.log("Produto atualizado:", produtoAtualizado);
+}
+
+// Função para excluir um produto existente
+async function excluiProduto(id) {
+  const conexao = await fetch(`https://64b692a1df0839c97e15cd3b.mockapi.io/produtos/${id}`, {
+    method: "DELETE"
+  });
+
+  if (conexao.ok) {
+    console.log("Produto excluído com sucesso.");
+  } else {
+    console.log("Erro ao excluir o produto.");
+  }
+}
+
+// Exemplo de uso dos métodos
+criaProduto("imagem-url", "categoria", "nome do produto", 10.99, "descrição do produto"); // Cria um novo produto
+atualizaProduto(1, "nova-imagem-url", "nova-categoria", "novo nome", 12.99, "nova descrição"); // Atualiza o produto com o ID 1
+excluiProduto(2); // Exclui o produto com o ID 2
+
+// Associar as funções a botões HTML
+document.getElementById("btn-criar").addEventListener("click", function() {
+  criaProduto("imagem-url", "categoria", "nome do produto", 10.99, "descrição do produto");
+});
+
+document.getElementById("btn-atualizar").addEventListener("click", function() {
+  atualizaProduto(1, "nova-imagem-url", "nova-categoria", "novo nome", 12.99, "nova descrição");
+});
+
+document.getElementById("btn-excluir").addEventListener("click", function() {
+  excluiProduto(2);
+});
+
+
+Neste exemplo, as funções `criaProduto`, `atualizaProduto` e `excluiProduto` agora são assíncronas e usam as URLs corretas para os métodos POST, PUT e DELETE respectivamente. Adicionei a associação dessas funções a botões HTML usando o `addEventListener`. Não se esqueça de substituir `btn-criar`, `btn-atualizar` e `btn-excluir` pelos IDs corretos dos seus botões no seu código HTML.

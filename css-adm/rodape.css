@@ -1,0 +1,126 @@
+.container__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background: #d2eeff;
+    padding: 2em 0;
+}
+.container__link {
+    text-align: center;
+}
+
+.link__li {
+    margin: 0 0 0.5em;
+}
+
+.link__rodape {
+    text-decoration: none;
+    color: black;
+}
+
+.logo__info {
+    padding: 0 0 1em;
+}
+
+.container__section {
+    background: #d2eeff;
+    padding: 1em 0;
+}
+
+.fale__conosco {
+    font-size: 14px;
+    margin: 0 1em;
+}
+
+.container__rodape--form {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em 1em;
+    width: 90vw;
+}
+
+.nome__input {
+    margin: 0 0 0.5em;
+    padding: 0.5em 0;
+}
+
+.mensagem__input {
+    height: 100px;
+    resize: none;
+}
+
+.button__rodape {
+    background: #2584ff;
+    color: #FFF;
+    margin: 0 1em;
+    padding: 5px 0;
+}
+
+.rodape__div {
+    background: #ffffff;
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+.rodape__descricao {
+    font-size: 14px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .container__div {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container__info {
+        padding: 1em 3em 1em 2em;
+      }
+
+      .container__link {
+        text-align: initial;
+      }
+
+    .container__section {
+        padding: 2em 2em;
+        width: 100vw;
+      }
+
+      .container__rodape--form {
+        width: 40vw;
+      }
+}
+
+@media screen and (min-width: 1500px) {
+
+    .container__info {
+        display: flex;
+        flex-direction: row;
+        padding: 0 0 0 200px;
+      }
+
+      .logo__info {
+        padding: 0 3em;
+        position: relative;
+        bottom: 60px;
+        padding: 0 5em 0 0;
+        width: 180px;
+      }
+
+      .container__link {
+        padding: 0 6em;
+      }
+
+      .link__li {
+          width: 10vw;
+      }
+
+      .nome__input, .mensagem__input {
+        width: 40vw;
+      }
+
+
+}

@@ -1,0 +1,58 @@
+
+.container__header {
+    margin: 1em 1em;
+}
+
+.container__logo {
+    width: 100px;
+}
+
+.container__adm {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    align-items: center;
+}
+
+.button__adm {
+    padding: 0.5em 0.5em;
+    background: #ffffff;
+    border: 1px solid rgb(0, 119, 255);
+    color: rgb(0, 119, 255);
+}
+
+@media screen and (min-width: 768px) {
+
+    .container__header {
+        margin: 1em 2.5em 1em 2.5em;
+      }
+
+    .button__adm {
+        order: 2;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+    .container__logo {
+        margin: 0 0 0 162px;
+      }
+
+      .button__adm {
+        margin: 0 4.5em 0 0;
+      }
+
+      .pesquisar__input {
+        width: 260px;
+        height: 32px;
+        border: 1px solid rgb(211, 211, 211);
+        font-size: 16px;
+        padding: 3px 8px;
+        border-radius: 100vw;
+    }
+
+    .search__lupa {
+        position: relative;
+        right: 170px;
+    }
+}

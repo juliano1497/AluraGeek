@@ -1,0 +1,42 @@
+
+.container__header {
+    margin: 1em 1em;
+}
+
+.container__logo {
+    width: 100px;
+}
+
+.container__adm {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    align-items: center;
+}
+
+.login__botao {
+    padding: 1em;
+}
+
+@media screen and (min-width: 768px) {
+
+    .container__header {
+        margin: 1em 2.5em 1em 2.5em;
+      }
+}
+
+@media screen and (min-width: 1500px) {
+    .pesquisar__input {
+        width: 260px;
+        height: 32px;
+        border: 1px solid rgb(211, 211, 211);
+        font-size: 16px;
+        padding: 3px 8px;
+        border-radius: 100vw;
+    }
+
+    .search__lupa {
+        position: relative;
+        right: 170px;
+    }
+}
