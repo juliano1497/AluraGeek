@@ -1,12 +1,11 @@
 async function listaProduto() {
-    const conexao = await fetch("https://64b692a1df0839c97e15cd3b.mockapi.io/produtos");
+    const conexao = await fetch("http://localhost:3000/produtos");
     const conexaoConvertida = await conexao.json();
     return conexaoConvertida;
 }
 
-
 async function criaProduto(imageUrl, categoria, produtoName, preco, descricao, id) {
-    const conexao = await fetch("https://64b692a1df0839c97e15cd3b.mockapi.io/produtos", {
+    const conexao = await fetch("http://localhost:3000/produtos", {
         method: "POST",
         headers: {
             "Content-type": "application/json"
@@ -24,25 +23,30 @@ async function criaProduto(imageUrl, categoria, produtoName, preco, descricao, i
     const conexaoConvertida = await conexao.json();
 }
 
-async function excluiProduto(id) {
-    const conexao = await fetch(`https://64b692a1df0839c97e15cd3b.mockapi.io/produtos/${id}`, {
-      method: "DELETE"
-    });
-    document.querySelector("[data-delete]").addEventListener("click", function() {
-        excluiProduto(2);
-      });
+async function atualizaProduto(id, imageUrl, categoria, produtoName, preco, descricao) {
+  const conexao = await fetch(`http://localhost:3000/produtos/${id}`, {
+    method: "PUT",
+    headers: {
+      "Content-type": "application/json"
+    },
+    body: JSON.stringify({
+      imageUrl: imageUrl,
+      categoria: categoria,
+      produtoName: produtoName,
+      preco: preco,
+      descricao: descricao
+    })
+  });
+
+  const produtoAtualizado = await conexao.json();
+  console.log("Produto atualizado:", produtoAtualizado);
   
-    if (conexao.ok) {
-      console.log("Produto excluído com sucesso.");
-    } else {
-      console.log("Erro ao excluir o produto.");
-    }
-  }
-
-
+  document.querySelector("[data-edit]").addEventListener("click", function() {
+    atualizaProduto(id, imageUrl, categoria, produtoName, preco, descricao);
+  });
+}
 
 export const conectaApi = {
     listaProduto,
-    criaProduto,
-    excluiProduto
+    criaProduto
 }
