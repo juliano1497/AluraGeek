@@ -4,7 +4,6 @@ async function listaProduto() {
     return conexaoConvertida;
 }
 
-
 async function criaProduto(imageUrl, categoria, produtoName, preco, descricao, id) {
     const conexao = await fetch("http://localhost:3000/produtos", {
         method: "POST",

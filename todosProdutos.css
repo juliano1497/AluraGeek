@@ -19,6 +19,7 @@
     margin: 0 0 1em 1.2em;
     padding: 0.5em 0.5em;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .button__produtos-delet {
@@ -69,12 +70,37 @@
 
 .produtos__imgs {
     margin: 0 1em;
+    height: 140px;
     width: 110px;
 }
 
 .produtos__descripton, .produtos__preco, .produtos__id {
     margin: 0 1em;
     padding: 0.3em 0;
+}
+
+.editar__produtos {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 1em;
+    width: 140px;
+}
+
+.edit__clicado {
+    background-image: none;
+    width: 80px;
+    border: 1px solid #000000;
+    text-align: center;
+    border-radius: 30vw;
+    background: #63f66c;
+    color: #000000;
+
+}
+
+.edit__clicado:hover {
+    background-color: #e8e4e4;
+    background: #4343ff;
+    color: #e8e4e4;
 }
 
 .produto__name {
@@ -122,6 +148,7 @@
     }
 
     .produtos__imgs {
+        height: 180px;
         width: 140px;
     }
 }
