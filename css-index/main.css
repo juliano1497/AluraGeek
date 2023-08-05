@@ -5,7 +5,6 @@
 }
 
 .produtos__section {
-    width: 100vw;
     background: #e8e4e4;
 }
 
@@ -15,7 +14,6 @@
     justify-content: space-between;
     padding: 1em 0 0;
     max-width: 270px;
-    width: 100vw;
 }
 
 .produto__classe {
